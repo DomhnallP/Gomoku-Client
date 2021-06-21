@@ -84,13 +84,19 @@ public class GomokuClientConsoleApplication implements CommandLineRunner {
         }
         currentGame.setGameStatus(GameStatus.FINISHED);
         if (currentGame.getWinner() == player.getToken()) {
+            gameClientService.displayBoard(currentGame.getBoard());
             System.out.println("Congratulations! You've won this match!");
         } else if (currentGame.getWinner() != player.getToken()) {
+            gameClientService.displayBoard(currentGame.getBoard());
             System.out.println("Unlucky, You lost this game, better luck next time! ");
         }
     }
-
-    public static void clearScreen() {
-        System.out.flush();
+    
+    public static void clearScreen() throws IOException, InterruptedException {
+        final String os = System.getProperty("os.name");
+        if (os.contains("Windows"))
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        else
+            Runtime.getRuntime().exec("clear");
     }
 }
