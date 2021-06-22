@@ -102,7 +102,7 @@ This app runs by default on port 8081 however in order to play a game you will n
    ```sh
    ./mvnw spring-boot:run
    ```
-4. To run the application in terminal 1, run the following command:
+4. To run the application in terminal 2, run the following command:
    ```sh
    ./mvnw spring-boot:run -Dspring-boot.run.arguments="--server.port=[NEW_PORT] --client.networkAddress=[NEW_PORT]"
    ```
