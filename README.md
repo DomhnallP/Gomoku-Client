@@ -146,6 +146,6 @@ Project Link: [https://github.com/DomhnallP/Gomoku-client](https://github.com/Do
 [issues-shield]: https://img.shields.io/github/issues/DomhnallP/Gomoku-client.svg?style=for-the-badge
 [issues-url]: https://github.com/DomhnallP/Gomoku-client/issues
 [license-shield]: https://img.shields.io/github/license/DomhnallP/Gomoku-client.svg?style=for-the-badge
-[license-url]: https://github.com/DomhnallP/Gomoku-client/LICENSE.txt
+[license-url]: https://github.com/DomhnallP/Gomoku-Client/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/DomhnallP
